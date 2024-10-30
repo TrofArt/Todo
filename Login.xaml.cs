@@ -26,6 +26,21 @@ namespace Desktop
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            var email = EmailTextBox.Text;
+            var password = Password1Box.Password;
+
+            if (!Validator.IsValidEmail(email))
+            {
+                MessageBox.Show("Ошибка валидации e-mail!");
+                return;
+            }
+
+            if (!Validator.IsValidPassword(password))
+            {
+                MessageBox.Show("Ошибка валидации пароля!");
+                return;
+            }
+
             Hide();
             new MainEmpty().Show();
             Close();

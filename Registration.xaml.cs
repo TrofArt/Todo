@@ -33,6 +33,35 @@ namespace Desktop
 
         private void RegistrationButton_Click(object sender, RoutedEventArgs e)
         {
+            var username = UsernameTextBox.Text;
+            var password = Password1Box.Password;
+            var password2 = Password2Box.Password;
+            var email = EmailTextBox.Text;
+
+            if (!Validator.IsValidName(username))
+            {
+                MessageBox.Show("Ошибка валидации имени!");
+                return;
+            }
+
+            if (!Validator.IsValidEmail(email))
+            {
+                MessageBox.Show("Ошибка валидации e-mail!");
+                return;
+            }
+
+            if (!Validator.IsValidPassword(password)
+            {
+                MessageBox.Show("Ошибка валидации пароля!");
+                return;
+            }
+
+            if (password != password2)
+            {
+                MessageBox.Show("Пароли не совпадают!");
+                return;
+            }
+
             Hide();
             new MainEmpty().Show();
             Close();

@@ -47,7 +47,7 @@
                                    Margin="0,0,0,10">
                             Почта
                         </TextBlock>
-                        <TextBox Grid.Row="1" 
+                        <TextBox x:Name="EmailTextBox" Grid.Row="1" 
                                  FontSize="18"
                                  VerticalAlignment="Center" BorderBrush="#00ABADB3" 
                                  Background="{x:Null}">
@@ -64,7 +64,7 @@
                                    Margin="0,0,0,10">
                             Пароль
                         </TextBlock>
-                        <PasswordBox Grid.Row="1" 
+                        <PasswordBox x:Name="Password1Box" Grid.Row="1" 
                                  FontSize="18"
                                  VerticalAlignment="Center" BorderBrush="#00ABADB3" 
                                   Background="{x:Null}">
