@@ -9,15 +9,20 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<None Remove="avatar.png" />
+		<None Remove="Images\avatar.png" />
 		<None Remove="Images\logo.png" />
 		<None Remove="logo.png" />
 	</ItemGroup>
+	
 	<ItemGroup>
+		<EmbeddedResource Include="Images\avatar.png" />
 		<EmbeddedResource Include="Images\logo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Resource Include="logo.png" />
+		<Resource Include="avatar.png" />
 	</ItemGroup>
 
 </Project>

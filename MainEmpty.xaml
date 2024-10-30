@@ -1,0 +1,34 @@
+﻿<Window x:Class="Desktop.MainEmpty"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop"
+        mc:Ignorable="d"
+        Title="MainEmpty" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="61*"></RowDefinition>
+            <RowDefinition Height="300*"></RowDefinition>
+            <RowDefinition Height="73*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Image Source="avatar.png" HorizontalAlignment="Left" Margin="10,10,0,0" />
+        </Grid>
+        <StackPanel Grid.Row="1" MaxWidth="500">
+            <TextBlock FontSize="32">Добро пожаловать!</TextBlock>
+            <TextBlock FontSize="32">Создайте свою первую задачу!</TextBlock>
+            <TextBlock FontSize="32"></TextBlock>
+            <TextBlock FontSize="32"></TextBlock>
+            <Button x:Name="BackButton" Margin="0,5,0,5" Foreground="White" Width="200" Height="40"
+        Background="#FFF96060" FontSize="16" BorderBrush="{x:Null}">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                Создать первую задачу
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

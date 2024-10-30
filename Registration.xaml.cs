@@ -23,5 +23,19 @@ namespace Desktop
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            new Login().Show();
+            Close();
+        }
+
+        private void RegistrationButton_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            new MainEmpty().Show();
+            Close();
+        }
     }
 }
