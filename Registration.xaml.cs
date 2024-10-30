@@ -50,7 +50,7 @@ namespace Desktop
                 return;
             }
 
-            if (!Validator.IsValidPassword(password)
+            if (!Validator.IsValidPassword(password))
             {
                 MessageBox.Show("Ошибка валидации пароля!");
                 return;
